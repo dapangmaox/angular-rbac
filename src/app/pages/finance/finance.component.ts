@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { IsGrantedDirective } from '../../directives/is-granted.directive';
 
 @Component({
   selector: 'app-finance',
   standalone: true,
-  imports: [],
-  templateUrl: './finance.component.html'
+  imports: [IsGrantedDirective],
+  templateUrl: './finance.component.html',
 })
-export class FinanceComponent {
-
-}
+export class FinanceComponent {}

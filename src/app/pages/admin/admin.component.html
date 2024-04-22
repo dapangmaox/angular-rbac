@@ -1,1 +1,31 @@
-<p>admin works!</p>
+<div class="m-4">You have below permission(s) in Admin page!</div>
+<button
+  *appIsGranted="'add_user'"
+  class="m-4 py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+>
+  Add User
+</button>
+<button
+  *appIsGranted="'remove_user'"
+  class="m-4 py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+>
+  Remove User
+</button>
+<button
+  *appIsGranted="'add_role'"
+  class="m-4 py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+>
+  Add Role
+</button>
+<button
+  *appIsGranted="'remove_role'"
+  class="m-4 py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+>
+  Remove Role
+</button>
+<button
+  *appIsGranted="'assign_role'"
+  class="m-4 py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+>
+  Assign Role
+</button>
